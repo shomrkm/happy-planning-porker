@@ -26,7 +26,7 @@ export const Dialog = ({
         <UIDialog
           as="div"
           static
-          className="overflow-y-auto fixed inset-0 z-10"
+          className="overflow-y-auto fixed inset-0 z-10 font-bitter"
           open={isOpen}
           onClose={onClose}
           initialFocus={initialFocus}

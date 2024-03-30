@@ -6,9 +6,6 @@ import { fn } from '@storybook/test';
 const meta = {
   title: 'layout/Header',
   component: Header,
-  parameters: {
-    layout: 'centered',
-  },
   tags: ['autodocs'],
 } satisfies Meta<typeof Header>;
 

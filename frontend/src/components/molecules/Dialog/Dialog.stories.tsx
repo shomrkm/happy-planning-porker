@@ -11,6 +11,7 @@ const meta: Meta = {
   parameters: {
     controls: { expanded: true },
   },
+  tags: ['autodocs']
 };
 
 export default meta;
@@ -26,7 +27,7 @@ export const Default: Story = {
         <Dialog isOpen={isOpen} onClose={close} initialFocus={cancelButtonRef}>
           <div className="inline-block overflow-hidden sm:p-6 px-4 pt-5 pb-4 sm:my-8 sm:w-full sm:max-w-lg text-left align-bottom sm:align-middle bg-white rounded-lg shadow-xl transition-all transform">
             <div className="mt-3 sm:mt-0 sm:ml-4 text-center sm:text-left">
-              <DialogTitle as="h3" className="text-lg font-medium leading-6 text-gray-800">
+              <DialogTitle as="h3" className="text-lg font-medium leading-6 text-gray-800 font-bitter">
                 Modal Dialog Title
               </DialogTitle>
             </div>
