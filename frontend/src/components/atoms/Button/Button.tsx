@@ -1,19 +1,19 @@
-"use client";
+'use client';
 
-import React from "react";
+import React from 'react';
 
-import { Spinner } from "../Spinner";
+import { Spinner } from '../Spinner';
 
 const variants = {
-  primary: "bg-accent text-gray-200 hover:opacity-90 hover:text-gray-300",
-  secondary: "bg-primary text-accent hover:bg-gray-100",
-  danger: "bg-red-500 text-white hover:opacity-90",
+  primary: 'bg-accent text-gray-200 hover:opacity-90 hover:text-gray-300',
+  secondary: 'bg-primary text-accent hover:bg-gray-100',
+  danger: 'bg-red-500 text-white hover:opacity-90',
 };
 
 const sizes = {
-  xs: "py-1 px-2 text-xs",
-  sm: "py-1.5 px-2 text-sm",
-  md: "py-2 px-3 text-md",
+  xs: 'py-1 px-2 text-xs',
+  sm: 'py-1.5 px-2 text-sm',
+  md: 'py-2 px-3 text-md',
 };
 
 type IconProps =
@@ -30,10 +30,10 @@ export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
-      type = "button",
-      className = "",
-      variant = "primary",
-      size = "sm",
+      type = 'button',
+      className = '',
+      variant = 'primary',
+      size = 'sm',
       isLoading = false,
       startIcon,
       endIcon,
@@ -56,4 +56,4 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     );
   }
 );
-Button.displayName = "Button";
+Button.displayName = 'Button';

@@ -1,17 +1,17 @@
-"use client";
+'use client';
 
-import React from "react";
+import React from 'react';
 
 const sizes = {
-  sm: "h-4 w-4",
-  md: "h-8 w-8",
-  lg: "h-16 w-16",
-  xl: "h-24 w-24",
+  sm: 'h-4 w-4',
+  md: 'h-8 w-8',
+  lg: 'h-16 w-16',
+  xl: 'h-24 w-24',
 };
 
 const variants = {
-  light: "text-white",
-  primary: "text-gray-800",
+  light: 'text-white',
+  primary: 'text-gray-800',
 };
 
 type Props = {
@@ -20,11 +20,7 @@ type Props = {
   className?: string;
 };
 
-export const Spinner: React.FC<Props> = ({
-  size = "md",
-  variant = "primary",
-  className = "",
-}) => {
+export const Spinner: React.FC<Props> = ({ size = 'md', variant = 'primary', className = '' }) => {
   return (
     <>
       <svg
