@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 import { Dialog, DialogDescription, DialogTitle } from './Dialog';
 import React from 'react';
-import { useDisclosure } from '../../../hooks/useDisclosure';
+import { useDisclosure } from '@/hooks/useDisclosure';
 import { Button } from '../../atoms/Button';
 
 const meta: Meta = {
