@@ -1,5 +1,6 @@
 'use client';
 
+import clsx from 'clsx';
 import React from 'react';
 
 import { Spinner } from '../Spinner';
@@ -45,7 +46,10 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         ref={ref}
         type={type}
-        className={`flex items-center justify-center rounded-md border border-gray-300 font-medium shadow-sm focus:outline-none disabled:cursor-not-allowed disabled:opacity-70 ${variants[variant]} ${sizes[size]}} ${className}`}
+        className={clsx(
+          'flex items-center justify-center rounded-md border border-gray-300 font-medium shadow-sm focus:outline-none disabled:cursor-not-allowed disabled:opacity-70',
+          `${variants[variant]} ${sizes[size]}} ${className}`
+        )}
         {...props}
       >
         {isLoading && <Spinner size="sm" className="text-current" />}
