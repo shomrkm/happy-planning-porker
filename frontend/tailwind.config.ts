@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        'body': ['"Noto Sans JP Variable"', 'sans-serif'],
+        bitter: ['Bitter', 'sans-serif'],
+        'body': ["Noto Sans", 'sans-serif'],
       },
       colors: {
         "primary": "var(--color-primary)",
