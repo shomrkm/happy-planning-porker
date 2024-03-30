@@ -4,7 +4,7 @@ import { Button } from '../atoms/Button';
 
 export const Header = async () => {
   return (
-    <header className="flex bg-primary fixed p-4 top-0 left-0 items-center w-full h-14">
+    <header className="fixed left-0 top-0 flex h-14 w-full items-center bg-primary p-4">
       <h1 className="font-bitter text-lg">Happy Planning Porker</h1>
       <Button className="ml-auto">Sign in</Button>
     </header>
