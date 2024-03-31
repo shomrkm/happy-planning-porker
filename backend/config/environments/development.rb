@@ -54,8 +54,9 @@ Rails.application.configure do
   config.active_record.verbose_query_logs = true
 
   # Needed for Next.js's getServerSideProps
-  # In the development environment, "api" is the hostname when the Rail API is launched as a Docker container.
-  config.hosts << 'api'
+  config.hosts << 'localhost'
+  config.hosts << '127.0.0.1'
+  config.hosts << 'site.example'
 
   # config.action_controller.forgery_protection_origin_check = false
 

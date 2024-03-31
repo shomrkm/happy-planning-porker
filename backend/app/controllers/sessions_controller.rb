@@ -16,5 +16,6 @@ class SessionsController < ApplicationController
 
   def logout
     cookies.delete(:token)
+    redirect_to "#{Rails.application.credentials.frontend[:domain]}"
   end
 end
